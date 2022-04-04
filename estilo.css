@@ -1,0 +1,383 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(250, 224, 209);
+}
+
+h1 {
+    width: 800px;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    background: linear-gradient(rgb(255, 42, 42), rgb(128, 0, 0), rgb(255, 81, 0));
+    border-radius: 40px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+#geral {
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-top: 15px;
+    border: 3px solid rgb(218, 212, 212);
+    background-color: white;
+}
+
+.bloco1, .bloco2,
+.bloco3, .bloco4,
+.bloco5, .bloco6,
+.bloco7, .bloco8,
+.bloco9, .bloco10,
+.bloco11, .bloco12,
+.bloco13, .bloco14,
+.bloco15, .bloco16,
+.bloco17, .bloco18,
+.bloco19, .bloco20,
+.bloco21, .bloco22,
+.bloco23, .bloco24,
+.bloco25 {
+    border-radius: 10px;
+    width: 13%;
+    height: 13%;
+    background-color: rgb(248, 92, 81);
+    margin-bottom: 5px;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.bloco1:hover {
+    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
+    transition: 1s;
+}
+
+.bloco2:hover {
+    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
+    transition: 1s;
+}
+
+.bloco3:hover {
+    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
+    transition: 1s;
+}
+
+.bloco4:hover {
+    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
+    transition: 1s;
+}
+
+.bloco5:hover {
+    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
+    transition: 1s;
+}
+
+.bloco6:hover {
+    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
+    transition: 1s; 
+}
+
+.bloco7:hover {
+    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
+    transition: 1s; 
+}
+
+.bloco8:hover {
+    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
+    transition: 1s;
+}
+
+.bloco9:hover {
+    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
+    transition: 1s; 
+}
+
+.bloco10:hover {
+    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
+    transition: 1s;
+}
+
+.bloco11:hover {
+    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
+    transition: 1s;
+}
+
+.bloco12:hover {
+    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
+    transition: 1s;
+}
+
+.bloco13:hover {
+    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
+    transition: 1s; 
+}
+
+.bloco14:hover {
+    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
+    transition: 1s;
+}
+
+.bloco15:hover {
+    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
+    transition: 1s; 
+}
+
+.bloco16:hover {
+    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
+    transition: 1s; 
+}
+
+.bloco17:hover {
+    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
+    transition: 1s; 
+}
+
+.bloco18:hover {
+    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
+    transition: 1s; 
+}
+
+.bloco19:hover {
+    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
+    transition: 1s;
+}
+
+.bloco20:hover {
+    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
+    transition: 1s;
+}
+
+.bloco21:hover {
+    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
+    transition: 1s;
+}
+
+.bloco22:hover {
+    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
+    transition: 1s;
+}
+
+.bloco23:hover {
+    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
+    transition: 1s;
+}
+
+.bloco24:hover {
+    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
+    transition: 1s;
+}
+
+.bloco25:hover {
+    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
+    transition: 1s;
+}
+
+.revela3, .revela8 {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 13%;
+    height: 13%;
+    background-color: rgb(248, 92, 81);
+    margin-bottom: 5px;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    transition: 1s;
+    background: url(jogo-memoria-imagens/carro.jpg) no-repeat center;
+}
+
+.revela1, .revela4 {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 13%;
+    height: 13%;
+    background-color: rgb(248, 92, 81);
+    margin-bottom: 5px;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    transition: 1s;
+    background: url(jogo-memoria-imagens/bike.png) no-repeat center;
+}
+
+.revela2, .revela9 {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 13%;
+    height: 13%;
+    background-color: rgb(248, 92, 81);
+    margin-bottom: 5px;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    transition: 1s;
+    background: url(jogo-memoria-imagens/cachorro.png) no-repeat center;
+}
+
+.revela25, .revela11 {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 13%;
+    height: 13%;
+    background-color: rgb(248, 92, 81);
+    margin-bottom: 5px;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    transition: 1s;
+    background: url(jogo-memoria-imagens/gato.png) no-repeat center;
+}
+
+.revela13, .revela18 {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 13%;
+    height: 13%;
+    background-color: rgb(248, 92, 81);
+    margin-bottom: 5px;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    transition: 1s;
+    background: url(jogo-memoria-imagens/mar.png) no-repeat center;
+}
+
+.revela5, .revela7 {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 13%;
+    height: 13%;
+    background-color: rgb(248, 92, 81);
+    margin-bottom: 5px;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    transition: 1s;
+    background: url(jogo-memoria-imagens/peixe.png) no-repeat center;
+}
+
+.revela10, .revela24 {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 13%;
+    height: 13%;
+    background-color: rgb(248, 92, 81);
+    margin-bottom: 5px;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    transition: 1s;
+    background: url(jogo-memoria-imagens/ave.png) no-repeat center;
+}
+
+.revela6, .revela12 {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 13%;
+    height: 13%;
+    background-color: rgb(248, 92, 81);
+    margin-bottom: 5px;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    transition: 1s;
+    background: url(jogo-memoria-imagens/planeta.png) no-repeat center;
+}
+
+.revela14, .revela19 {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 13%;
+    height: 13%;
+    background-color: rgb(248, 92, 81);
+    margin-bottom: 5px;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    transition: 1s;
+    background: url(jogo-memoria-imagens/leao.png) no-repeat center;
+}
+
+.revela15, .revela17 {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 13%;
+    height: 13%;
+    background-color: rgb(248, 92, 81);
+    margin-bottom: 5px;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    transition: 1s;
+    background: url(jogo-memoria-imagens/vaca.png) no-repeat center;
+}
+
+.revela20, .revela21 {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 13%;
+    height: 13%;
+    background-color: rgb(248, 92, 81);
+    margin-bottom: 5px;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    transition: 1s;
+    background: url(jogo-memoria-imagens/planta.png) no-repeat center;
+}
+
+.revela22, .revela23 {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 13%;
+    height: 13%;
+    background-color: rgb(248, 92, 81);
+    margin-bottom: 5px;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    transition: 1s;
+    background: url(jogo-memoria-imagens/aviao.png) no-repeat center;
+}
+
+.revela16 {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 13%;
+    height: 13%;
+    background-color: rgb(248, 92, 81);
+    margin-bottom: 5px;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    transition: 1s;
+    background: url(jogo-memoria-imagens/sempar.png) no-repeat center;
+}
+
+
+#rodape {
+    background-color: rgb(255, 191, 191);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    padding: 3px;
+}
