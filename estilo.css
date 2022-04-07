@@ -17,6 +17,7 @@ h1 {
     color: white;
     text-align: center;
     padding: 5px;
+    text-shadow: 5px 5px black;
 }
 
 #geral {
@@ -29,19 +30,10 @@ h1 {
     background-color: white;
 }
 
-.bloco1, .bloco2,
-.bloco3, .bloco4,
-.bloco5, .bloco6,
-.bloco7, .bloco8,
-.bloco9, .bloco10,
-.bloco11, .bloco12,
-.bloco13, .bloco14,
-.bloco15, .bloco16,
-.bloco17, .bloco18,
-.bloco19, .bloco20,
-.bloco21, .bloco22,
-.bloco23, .bloco24,
-.bloco25 {
+.carro, .cachorro,
+.ave, .caranguejo, .planeta,
+.aviao, .planta, .vaca, .leao,
+.peixe, .gato, .bike, .sempar {
     border-radius: 10px;
     width: 13%;
     height: 13%;
@@ -51,131 +43,59 @@ h1 {
     margin-left: 40px;
     margin-top: 15px;
     margin-bottom: 20px;
+    box-shadow: 10px 5px 5px black;
 }
 
-.bloco1:hover {
+.bike:hover {
     background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
-    transition: 1s;
 }
 
-.bloco2:hover {
+.carro:hover {
     background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
-    transition: 1s;
 }
 
-.bloco3:hover {
+.cachorro:hover {
     background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
-    transition: 1s;
 }
 
-.bloco4:hover {
+.ave:hover {
     background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
-    transition: 1s;
 }
 
-.bloco5:hover {
+.caranguejo:hover {
     background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
-    transition: 1s;
 }
 
-.bloco6:hover {
+.planeta:hover {
     background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
-    transition: 1s; 
 }
 
-.bloco7:hover {
+.planta:hover {
     background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
-    transition: 1s; 
 }
 
-.bloco8:hover {
+.vaca:hover {
     background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
-    transition: 1s;
 }
 
-.bloco9:hover {
+.leao:hover {
     background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
-    transition: 1s; 
 }
 
-.bloco10:hover {
+.aviao:hover {
     background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
-    transition: 1s;
 }
 
-.bloco11:hover {
+.peixe:hover {
     background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
-    transition: 1s;
 }
 
-.bloco12:hover {
+.gato:hover {
     background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
-    transition: 1s;
 }
 
-.bloco13:hover {
+.sempar:hover {
     background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
-    transition: 1s; 
-}
-
-.bloco14:hover {
-    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
-    transition: 1s;
-}
-
-.bloco15:hover {
-    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
-    transition: 1s; 
-}
-
-.bloco16:hover {
-    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
-    transition: 1s; 
-}
-
-.bloco17:hover {
-    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
-    transition: 1s; 
-}
-
-.bloco18:hover {
-    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
-    transition: 1s; 
-}
-
-.bloco19:hover {
-    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
-    transition: 1s;
-}
-
-.bloco20:hover {
-    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
-    transition: 1s;
-}
-
-.bloco21:hover {
-    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
-    transition: 1s;
-}
-
-.bloco22:hover {
-    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
-    transition: 1s;
-}
-
-.bloco23:hover {
-    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
-    transition: 1s;
-}
-
-.bloco24:hover {
-    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
-    transition: 1s;
-}
-
-.bloco25:hover {
-    background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
-    transition: 1s;
 }
 
 .revela3, .revela8 {
@@ -190,7 +110,7 @@ h1 {
     margin-top: 15px;
     margin-bottom: 20px;
     transition: 1s;
-    background: url(jogo-memoria-imagens/carro.jpg) no-repeat center;
+    background: url(jogo-memoria-imagens/carro.png) no-repeat center;
 }
 
 .revela1, .revela4 {
@@ -250,7 +170,7 @@ h1 {
     margin-top: 15px;
     margin-bottom: 20px;
     transition: 1s;
-    background: url(jogo-memoria-imagens/mar.png) no-repeat center;
+    background: url(jogo-memoria-imagens/caranguejo.png) no-repeat center;
 }
 
 .revela5, .revela7 {
@@ -380,4 +300,6 @@ h1 {
     font-size: 14px;
     text-align: center;
     padding: 3px;
+    border: 1px solid red;
+    position: absolute;
 }
