@@ -21,28 +21,46 @@ h1 {
 }
 
 #geral {
-    width: 800px;
-    height: 800px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-top: 15px;
-    border: 3px solid rgb(218, 212, 212);
-    background-color: white;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 700px;
+    height: 650px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center;
+    background-color: rgb(241, 236, 236);
+}
+
+#botao {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 1px solid gray;
+    background-color: rgb(134, 6, 6);;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    position: absolute;
+    margin-top: 240px;
+    margin-right: 850px;
+    box-shadow: 5px 5px 5px black;
+}
+
+#botao:hover {
+    background-color: rgb(187, 49, 49);
 }
 
 .carro, .cachorro,
 .ave, .caranguejo, .planeta,
 .aviao, .planta, .vaca, .leao,
 .peixe, .gato, .bike, .sempar {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
     border-radius: 10px;
-    width: 13%;
-    height: 13%;
-    background-color: rgb(248, 92, 81);
-    margin-bottom: 5px;
-    display: inline-block;
-    margin-left: 40px;
-    margin-top: 15px;
-    margin-bottom: 20px;
+    background: rgb(148, 10, 10);
     box-shadow: 10px 5px 5px black;
 }
 
@@ -98,208 +116,82 @@ h1 {
     background: url(jogo-memoria-imagens/interrogacao.png) no-repeat center;
 }
 
-.revela3, .revela8 {
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 13%;
-    height: 13%;
-    background-color: rgb(248, 92, 81);
-    margin-bottom: 5px;
-    display: inline-block;
-    margin-left: 40px;
-    margin-top: 15px;
-    margin-bottom: 20px;
+.revela1, .revela2, .revela3,
+.revela4, .revela5, .revela6,
+.revela7, .revela8, .revela9, 
+.revela10, .revela11, .revela12,
+.revela13, .revela14, .revela15,
+.revela16, .revela17, .revela18,
+.revela19, .revela20, .revela21,
+.revela22, .revela23, .revela24, 
+.revela25 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(236, 164, 164);
+    border-radius: 20px;
+    margin: 15px;
     transition: 1s;
+}
+
+.revela3, .revela8 {
     background: url(jogo-memoria-imagens/carro.png) no-repeat center;
 }
 
 .revela1, .revela4 {
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 13%;
-    height: 13%;
-    background-color: rgb(248, 92, 81);
-    margin-bottom: 5px;
-    display: inline-block;
-    margin-left: 40px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    transition: 1s;
     background: url(jogo-memoria-imagens/bike.png) no-repeat center;
 }
 
 .revela2, .revela9 {
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 13%;
-    height: 13%;
-    background-color: rgb(248, 92, 81);
-    margin-bottom: 5px;
-    display: inline-block;
-    margin-left: 40px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    transition: 1s;
     background: url(jogo-memoria-imagens/cachorro.png) no-repeat center;
 }
 
 .revela25, .revela11 {
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 13%;
-    height: 13%;
-    background-color: rgb(248, 92, 81);
-    margin-bottom: 5px;
-    display: inline-block;
-    margin-left: 40px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    transition: 1s;
     background: url(jogo-memoria-imagens/gato.png) no-repeat center;
 }
 
 .revela13, .revela18 {
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 13%;
-    height: 13%;
-    background-color: rgb(248, 92, 81);
-    margin-bottom: 5px;
-    display: inline-block;
-    margin-left: 40px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    transition: 1s;
     background: url(jogo-memoria-imagens/caranguejo.png) no-repeat center;
 }
 
 .revela5, .revela7 {
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 13%;
-    height: 13%;
-    background-color: rgb(248, 92, 81);
-    margin-bottom: 5px;
-    display: inline-block;
-    margin-left: 40px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    transition: 1s;
     background: url(jogo-memoria-imagens/peixe.png) no-repeat center;
 }
 
 .revela10, .revela24 {
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 13%;
-    height: 13%;
-    background-color: rgb(248, 92, 81);
-    margin-bottom: 5px;
-    display: inline-block;
-    margin-left: 40px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    transition: 1s;
     background: url(jogo-memoria-imagens/ave.png) no-repeat center;
 }
 
 .revela6, .revela12 {
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 13%;
-    height: 13%;
-    background-color: rgb(248, 92, 81);
-    margin-bottom: 5px;
-    display: inline-block;
-    margin-left: 40px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    transition: 1s;
     background: url(jogo-memoria-imagens/planeta.png) no-repeat center;
 }
 
 .revela14, .revela19 {
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 13%;
-    height: 13%;
-    background-color: rgb(248, 92, 81);
-    margin-bottom: 5px;
-    display: inline-block;
-    margin-left: 40px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    transition: 1s;
     background: url(jogo-memoria-imagens/leao.png) no-repeat center;
 }
 
 .revela15, .revela17 {
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 13%;
-    height: 13%;
-    background-color: rgb(248, 92, 81);
-    margin-bottom: 5px;
-    display: inline-block;
-    margin-left: 40px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    transition: 1s;
     background: url(jogo-memoria-imagens/vaca.png) no-repeat center;
 }
 
 .revela20, .revela21 {
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 13%;
-    height: 13%;
-    background-color: rgb(248, 92, 81);
-    margin-bottom: 5px;
-    display: inline-block;
-    margin-left: 40px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    transition: 1s;
     background: url(jogo-memoria-imagens/planta.png) no-repeat center;
 }
 
 .revela22, .revela23 {
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 13%;
-    height: 13%;
-    background-color: rgb(248, 92, 81);
-    margin-bottom: 5px;
-    display: inline-block;
-    margin-left: 40px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    transition: 1s;
     background: url(jogo-memoria-imagens/aviao.png) no-repeat center;
 }
 
 .revela16 {
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 13%;
-    height: 13%;
-    background-color: rgb(248, 92, 81);
-    margin-bottom: 5px;
-    display: inline-block;
-    margin-left: 40px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    transition: 1s;
     background: url(jogo-memoria-imagens/sempar.png) no-repeat center;
 }
 
-
 #rodape {
-    background-color: rgb(255, 191, 191);
+    color: rgb(6, 0, 56);
+    background-color: rgb(230, 230, 230);
+    width: 800px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 14px;
     text-align: center;
     padding: 3px;
-    border: 1px solid red;
-    position: absolute;
+    margin-top: 40px;
 }
