@@ -1,62 +1,71 @@
+let armazenados = []
+let ids = []
+let contagemVitoria = 0
 
-        
-        var armazenados = Array()
+function revela(id) {
+  // Obtém a classe do elemento com o ID informado
+  const classeElemento = document.getElementById(id).className
 
-        var ids = Array()
+  // Armazena a classe e o ID do elemento
+  armazenados.push(classeElemento)
+  ids.push(id)
 
-        var contagem_vitoria = 0
+  console.log(armazenados)
+  console.log(ids)
 
-        function revela(id) {
+  // Adiciona a classe para mostrar o elemento
+  document.getElementById(ids[0]).className = 'revela' + ids[0]
 
-            document.getElementById(id).className
+  if(armazenados.length == 2) {
+    if (armazenados[0] == armazenados[1]) {
+      // Mostra mensagem de acerto e atualiza a contagem de vitórias
+      swal("Você acertou!", "", "success");
+      contagemVitoria++
+      
+      // Verifica se o jogo foi vencido
+      verificaVitoria()
 
-            var x = (document.getElementById(id).className)
+      // Adiciona a classe para mostrar os elementos acertados
+      document.getElementById(ids[0]).className = 'revela' + ids[0]
+      document.getElementById(ids[1]).className = 'revela' + ids[1] 
 
-            armazenados.push(x)
-            ids.push(id)
+      // Limpa os vetores de armazenamento
+      limpaVetores()
 
-            console.log(armazenados)
-            console.log(ids)
+    } else {
+      // Mostra mensagem de erro e oculta os elementos errados
+      document.getElementById(ids[1]).className = 'revela' + ids[1]
+      swal("Você errou!", "", "error");
+      document.getElementById(ids[0]).className = armazenados[0]
+      document.getElementById(ids[1]).className = armazenados[1]
 
-            document.getElementById(ids[0]).className = 'revela' + ids[0]
+      // Limpa os vetores de armazenamento
+      limpaVetores()
+    }
 
-            if(armazenados.length == 2) {
-                if (armazenados[0] == armazenados[1]) {
-                    swal("Você acertou!", "", "success");
-                    contagem_vitoria++
-                    verificaVitoria()
-                    document.getElementById(ids[0]).className = 'revela' + ids[0]
-                    document.getElementById(ids[1]).className = 'revela' + ids[1] 
-                    zeraVetores()
+  } else if (armazenados.length == 1 && armazenados[0] == 'sempar') {
+    // Mostra mensagem de erro para elemento ímpar
+    alert('Não há uma imagem corresponde a esta figura!')
+    
+    // Atualiza a contagem de vitórias e verifica se o jogo foi vencido
+    contagemVitoria++
+    verificaVitoria()
 
-                } else {
-                    document.getElementById(ids[1]).className = 'revela' + ids[1]
-                    swal("Você errou!", "", "error");
-                    document.getElementById(ids[0]).className = armazenados[0]
-                    document.getElementById(ids[1]).className = armazenados[1]
-                    zeraVetores()
-                }
+    // Remove o elemento ímpar dos vetores de armazenamento
+    armazenados.pop()
+    ids.pop()
+  }
+}
 
-            } else if (armazenados.length == 1 && armazenados[0] == 'sempar') {
-                alert('Não há uma imagem corresponde a esta figura!')
-                contagem_vitoria++
-                verificaVitoria()
-                armazenados.pop()
-                ids.pop()
-            }
-        }
+function limpaVetores() {
+  // Limpa os vetores de armazenamento
+  armazenados.length = 0
+  ids.length = 0
+}
 
-        function zeraVetores() {
-            armazenados.pop()
-            armazenados.pop()
-            ids.pop()
-            ids.pop()
-        }
-
-        function verificaVitoria() {
-            if (contagem_vitoria == 13) {
-                swal("PARABÉNS! VOCÊ VENCEU!", "", "success");
-            }
-        }
-
-        
+function verificaVitoria() {
+  if (contagemVitoria == 13) {
+    // Mostra mensagem de parabéns para o jogador
+    swal("PARABÉNS! VOCÊ VENCEU!", "", "success");
+  }
+}
